@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t;cin>>t;
+	while(t--)
+	{
+		int n,k; cin>>n>>k;
+		string s[n];
+		int check[n]={0};
+		for(int i=0;i<n;i++)
+		{
+			cin>>s[i];
+		}
+		while(k--)
+		{
+			int a;cin>>a;
+			string s1;
+			for(int i=0;i<a;i++)
+			{
+				cin>>s1;
+				for(int j=0;j<n;j++)
+				{
+					if(s1==s[j])
+					check[j]=1;
+				}
+			}
+		}
+		for(int i=0;i<n;i++)
+		{
+			if(check[i])
+			cout<<"YES"<<' ';
+			else
+			cout<<"NO"<<' ';
+		}
+	}
+	return 0;
+}
