@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	double tmoney,amoney;
+	int wmoney;
+	cin>>wmoney;
+	cin>>tmoney;
+	if(wmoney%5==0)
+	{
+	    if(wmoney<tmoney && ((wmoney+0.5)<=tmoney))
+	    {
+	        amoney=tmoney-wmoney-(0.5);
+	        cout<<amoney<<endl;
+	    }
+	    else
+	    {
+	    	cout<<tmoney<<endl;
+		}
+	        
+	 
+	}
+	else
+	{
+	    cout<<tmoney<<endl;
+	}
+	return 0;
+}
