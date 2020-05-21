@@ -1,0 +1,27 @@
+#include<iostream>
+#include<sstream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	while(n--)
+	{
+		int x;
+		cin>>x;
+		ostringstream str1;
+		str1<<x;
+		string s=str1.str();
+		int len=s.length();
+		long long int sum=0;
+		for(int i=0;i<len;i++)
+		{
+			char p=s[i];
+			int k=p;
+			p=p-48;
+			sum=sum+p;
+		}
+		cout<<sum<<endl;
+	}
+	
+}
